@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><link rel="stylesheet" href="css/secondpage.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <div class="comment">
+<center><h1>コメント欄</h1></center></div>
+    <a>ここでは、このサイトの直してほしいところ、追加してほしいことを書いてほしいです。</a>
+<form action="/create" method="post">
+ <input type="text" name="name" placeholder="名前">
+ <input type="text" name="body" placeholder="コメント">
+ <input type="submit" value="送信">
+</form>
+
+<h2>コメント一覧</h2>
+<table>
+  <% @histories.each do |history| %>
+	<tr>
+	  <td>名前：<%= history.name %>｜コメント：<%= history.body %></td>
+	</tr>
+	<% end %>
+</table>
+</body>
+</html>

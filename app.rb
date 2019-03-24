@@ -5,9 +5,25 @@ require 'sinatra/reloader' if development?
 require 'sinatra/activerecord'
 require './models'
 
-get '/' do
+get '/comment' do
   @histories = Post.all
+  erb :comment
+end
+
+get '/' do
   erb :index
+end
+
+get '/secondpage' do
+  erb :secondpage
+end
+
+get '/community' do
+  erb :community
+end
+
+get '/comment' do
+  erb :secondpage
 end
 
 post '/create' do

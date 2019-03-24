@@ -1,23 +1,187 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<title>タイトル</title>
+   <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
 </head>
 <body>
-<form action="/create" method="post">
- <input type="text" name="name" placeholder="名前">
- <input type="text" name="body" placeholder="コメント">
- <input type="submit" value="送信">
-</form>
 
-<h2>コメント一覧</h2>
-<table>
-  <% @histories.each do |history| %>
-	<tr>
-	  <td><%= history.name %>, <%= history.body %></td>
-	</tr>
-	<% end %>
-</table>
+  <div class="main-visual">
+  <div class="up">
+  <div class="word">
+<h1>高校生が作る
+<p>奈良観光サイト</p>
+</h1>
+</div>
+
+<div class="menu">
+<nav>
+<ul>
+<li><a href="#season">季節</a></li>
+<li><a href="#world">世界遺産</a></li>
+<li><a href="#takumi">名産品</a></li>
+<li><a href="/community">コミュニティ</a></li>
+<li><a href="/comment">コメント</a></li>
+
+</ul>
+</nav>
+  </div>
+      </div>
+</div>
+
+<center>
+<div class=nakami>
+
+<div id="season">
+  <h1>季節の奈良</h1></div>
+   <div class=seal>
+   <div class=seal1>
+       </div>
+    <a href="/secondpage">
+    <div class=seal1>
+    鹿
+<img src="img/無題.png">
+        </div></a>
+    <div class=seal1>
+    燈花会
+    <img src="img/toka.jpg">
+    </div>
+    <div class=seal1>
+    鹿寄せ
+    <img src="img/holen.jpg">
+    </div>
+    <div class=seal1>
+瑠璃会
+        <img src="img/ruri.jpg">
+    </div>
+       <div class=seal1></div>
+    </div>
+
+
+<a1 id="world">
+    <h1>世界遺産</h1></a1>
+   <div class=seal>
+   <div class=seal1></div>
+    <div class=seal1>
+    東大寺
+    <img src="img/big.jpg">
+    </div>
+    <div class=seal1>
+    平城宮跡
+    <img src
+    ="img/heijyokyo.jpg">
+    </div>
+    <div class=seal1>
+    法隆寺
+    <img src="img/fiv.jpg">
+    </div>
+    <div class=seal1>
+       興福寺
+        <img src="img/asyura.jpg">
+    </div>
+    <div class=seal1></div>
+    </div>
+
+<div class=seal>
+  <div class=seal1></div>
+   <div class=seal1>
+   春日大社
+   <img src="img/kasuga.png">
+    </div>
+    <div class=seal1>
+    紀伊山地
+    <img src="img/kii.jpg">
+    </div>
+    <div class=seal1>
+    唐招提寺
+    <img src="img/ganjin.png">
+    </div>
+    <div class=seal1>
+    元興寺
+    <img src="img/ganko.png">
+    </div>
+    <div class=seal1></div>
+    </div>
+
+<div class=seal>
+  <div class=seal1></div>
+   <div class=seal1>
+   薬師寺
+   <img src="img/yakusi.jpg">
+    </div>
+    <div class=seal1>
+    春日山原始林
+    <img src=img/hayasi.png>
+    </div>
+    <div class=seal1>
+    奈良町
+    <img src="img/mati.jpg">
+    </div>
+    <div class=seal1>
+    猿沢池
+    <img src="img/saru.png">
+    </div>
+    <div class=seal1></div>
+    </div>
+
+<a1 id="takumi">
+    <h1>名産品</h1></a1>
+   <div class=seal>
+    <div class=seal1></div>
+    <div class=seal1>
+    柿の葉寿司
+    <img src
+    ="img/kaik.png">
+    </div>
+    <div class=seal1>
+    三輪素麺
+    <img src="img/miwa.jpg">
+    </div>
+    <div class=seal1>
+    茶筅
+    <img src="img/tyatya.jpg">
+    </div>
+    <div class=seal1>
+    金魚
+    <img src="img/kingyo.jpg">
+    </div>
+    <div class=seal1></div>
+    </div>
+    <div class=seal>
+    <div class=seal1></div>
+   <div class=seal1>
+   奈良のさるぼぼ
+   <img src="img/bobo.jpg">
+    </div>
+    <div class=seal1>
+    奈良の木彫り
+    <img src="img/kibori.jpg">
+    </div>
+    <div class=seal1>
+    奈良の墨
+    <img src="img/sumi.png">
+    </div>
+    <div class=seal1>
+    グローブ
+    <img src="img/gurobu.jpg">
+    </div>
+    <div class=seal1></div>
+    </div>
+    </div>
+</center>
+
+<center><div class="community">
+<h1><a href="community.html">コミュニティ</a></h1>
+   <a>coming soon</a>
+    </div></center>
+
+<center><div class="comment">
+    <h1><a href="comment.html">コメント覧</a></h1>
+    <a>coming soon</a> </div></center>
+
+<div class=foot>
+<p>&copy;Jundai.M</p>
+</div>
 </body>
 </html>

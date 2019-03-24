@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#e59d22;
+}
+
+.photo img{
+    width: 800px;
+    margin: 0 auto;
+    display: block;
+}
+
+.photo{
+    width: 100%;
+}
+
+.ban{
+    margin-top: 20px;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.ban h1{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.word h1{
+    font-size: 50px;
+}
+
+a{
+    font-size: 25px;
+}

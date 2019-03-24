@@ -12,6 +12,11 @@
 
 ActiveRecord::Schema.define(version: 2019_03_24_021520) do
 
+  create_table "histories", force: :cascade do |t|
+    t.string "name"
+    t.text "body"
+  end
+
   create_table "posts", force: :cascade do |t|
     t.string "name"
     t.text "body"
