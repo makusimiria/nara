@@ -10,5 +10,14 @@
  <input type="text" name="body" placeholder="コメント">
  <input type="submit" value="送信">
 </form>
+
+<h2>コメント一覧</h2>
+<table>
+  <% @histories.each do |history| %>
+	<tr>
+	  <td><%= history.name %>, <%= history.body %></td>
+	</tr>
+	<% end %>
+</table>
 </body>
 </html>

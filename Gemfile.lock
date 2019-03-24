@@ -80,6 +80,7 @@ DEPENDENCIES
   debase
   fastri
   pg (~> 0.18)
+  rake
   rcodetools
   rubocop
   ruby-debug-ide
